@@ -17,7 +17,7 @@
 
 <script>
   import NavMenu from '@/components/NavMenu'
-  import Header from '@/components/Header'
+  import Header from '@/components/Navtop'
 
   export default {
     name: 'app',
@@ -30,7 +30,7 @@
 
 <style>
   .header {
-    background-color: #409EFF;
+    background-color: #5500ff;
     color: #fff;
     line-height: 60px;
   }

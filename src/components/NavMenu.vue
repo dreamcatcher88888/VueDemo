@@ -5,7 +5,7 @@
         class="el-menu-vertical-demo"
         @open="handleOpen"
         @close="handleClose"
-        background-color="#000000"
+        background-color="#0055ff"
         unique-opened
         router
         text-color="#fff"
@@ -15,7 +15,7 @@
                 <i :class="item.icon"></i>
                 <span v-text="item.name"></span>
               </template>
-              <el-menu-item-group class="over-hide" v-for="sub in item.sub" :key="sub.componentName">
+              <el-menu-item-group clmnass="over-hide" v-for="sub in item.sub" :key="sub.componentName">
                     <el-menu-item :index="sub.componentName" v-text="sub.name">
                     </el-menu-item>
               </el-menu-item-group>
@@ -27,7 +27,7 @@
 
 <script>
   import menu from '@/config/menu-config'
-  
+
   export default {
       data () {
         return {
