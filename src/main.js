@@ -8,9 +8,11 @@ import 'element-ui/lib/theme-chalk/index.css'
 import NormailizeCss from 'normalize.css'
 import 'vue-awesome/icons'
 import Icon from 'vue-awesome/components/Icon'
+import axios from 'axios'
 
 Vue.config.productionTip = false
 Vue.use(ElementUI)
+Vue.prototype.$axios = axios
 Vue.component('icon', Icon)
 
 
