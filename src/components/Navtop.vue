@@ -1,7 +1,7 @@
 <template>
   <el-container>
     <el-aside width="auto" class="header-logo tap" >
-      <img class="logo" src="@/assets/logo_gaitubao_335x363_gaitubao_95x103.jpg" alt="Logo" />
+      <img class="logo" src="@/assets/logo.jpg" alt="Logo" />
       <h2 class="title">角色权限管理系统</h2>
 
     </el-aside>

@@ -5,18 +5,29 @@
     border
     style="width: 100%">
     <el-table-column
-      prop="date"
-      label="日期"
+      prop="id"
+      label="序号"
       width="180">
     </el-table-column>
     <el-table-column
-      prop="name"
-      label="姓名"
+      prop="userName"
+      label="用户名"
       width="180">
     </el-table-column>
     <el-table-column
-      prop="address"
-      label="地址">
+      prop="role"
+      label="角色"
+      width="180">
+    </el-table-column>
+    <el-table-column
+      prop="createTime"
+      label="创建时间"
+      width="180">
+    </el-table-column>
+    <el-table-column
+      prop="updateTime"
+      label="修改时间">
+      </el-table-column>
     </el-table-column>
   </el-table>
     </div>
@@ -27,21 +38,29 @@
     data() {
       return {
         tableData: [{
-          date: '2016-05-02',
-          name: '王小虎',
-          address: '上海市普陀区金沙江路 1518 弄'
+          id:'1',
+          createTime: '2016-05-02',
+          userName: 'zhangsan',
+          role: '管理员',
+          updateTime:"2016-05-02"
         }, {
-          date: '2016-05-04',
-          name: '王小虎',
-          address: '上海市普陀区金沙江路 1517 弄'
+          id:'1',
+          createTime: '2016-05-02',
+          userName: 'luohao',
+          role: '管理员',
+          updateTime:"2016-05-02"
         }, {
-          date: '2016-05-01',
-          name: '王小虎',
-          address: '上海市普陀区金沙江路 1519 弄'
+          id:'1',
+          createTime: '2016-05-02',
+          userName: 'chengrui',
+          role: '管理员',
+          updateTime:"2016-05-02"
         }, {
-          date: '2016-05-03',
-          name: '王小虎',
-          address: '上海市普陀区金沙江路 1516 弄'
+          id:'1',
+          createTime: '2016-05-02',
+          userName: 'dengming',
+          role: '管理员',
+          updateTime:"2016-05-02"
         }]
       }
     }
