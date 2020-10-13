@@ -46,10 +46,13 @@
           date1: '',
           date2: ''
         },
-        tableData: []
+        tableData: [],
 
       }
     },
+    created(){
+          this.onSubmit();
+        },
     methods: {
       onSubmit() {
         this.$axios.get("http://localhost:8081/demo/user/list", {
@@ -65,7 +68,6 @@
             console.log(err);
           });
       }
-
       // alert(this.$moment(this.$data.form.date1).format('YYYYMMDD'))
     }
   }
