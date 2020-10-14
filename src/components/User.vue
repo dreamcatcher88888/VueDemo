@@ -18,6 +18,7 @@
       </el-form-item>
       <el-form-item>
         <el-button type="primary" @click="onSubmit">搜索</el-button>
+        <el-button type="primary" @click="resetForm">重置</el-button>
       </el-form-item>
     </el-form>
 
@@ -73,7 +74,12 @@
           .catch(err => {
             console.log(err);
           });
+      },
+      resetForm()
+      {
+         this.form = {};
       }
+
       // alert(this.$moment(this.$data.form.date1).format('YYYYMMDD'))
     }
   }
