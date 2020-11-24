@@ -4,22 +4,22 @@ module.exports = [{
   icon:'el-icon-setting',
   sub: [{
     name: '用户管理',
-    componentName: 'User'
+    componentPath: '/main/user'
   }, {
     name: '角色管理',
-    componentName: 'Role'
+    componentPath: '/main/role'
   },
   {name:'权限配置',
-  componentName:'Permission'}]
+  componentPath:'/main/permission'}]
 }, {
   name: '状态监控',
   id: 'stat',
   icon:'el-icon-menu',
   sub: [{
     name: '数据库监控',
-    componentName: 'Database'
+    componentPath: '/main/database'
   }, {
     name: '服务器监控',
-    componentName: 'Server'
+    componentPath: '/main/server'
   }]
 }]

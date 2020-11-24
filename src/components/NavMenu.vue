@@ -15,8 +15,8 @@
                 <i :class="item.icon"></i>
                 <span v-text="item.name"></span>
               </template>
-              <el-menu-item-group clmnass="over-hide" v-for="sub in item.sub" :key="sub.componentName">
-                    <el-menu-item :index="sub.componentName" v-text="sub.name">
+              <el-menu-item-group clmnass="over-hide" v-for="sub in item.sub" :key="sub.componentPath">
+                    <el-menu-item :index="sub.componentPath" v-text="sub.name">
                     </el-menu-item>
               </el-menu-item-group>
           </el-submenu>
